@@ -5,4 +5,12 @@ class User < ApplicationRecord
   has_many :events
   has_many :bookings
   has_many :events, through: :bookings
+
+  def customer?
+    self.roles.pluck(:name).include?('Customer')
+  end
+
+  def event_organizer?
+    self.roles.pluck(:name).include?('EventOrganizer')
+  end
 end

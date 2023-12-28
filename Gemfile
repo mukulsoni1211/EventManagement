@@ -49,3 +49,5 @@ group :development do
   gem 'rails-erd'
 end
 
+# For authorization the users
+gem 'cancancan'
