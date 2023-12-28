@@ -15,7 +15,6 @@ class Api::EventsController < ApplicationController
 
   def create
     event = current_user.events.new(event_params)
-    debugger
     if event.save
       render json: event, status: :created
     else
