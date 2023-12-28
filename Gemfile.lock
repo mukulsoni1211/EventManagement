@@ -181,12 +181,19 @@ GEM
     rake (13.1.0)
     rdoc (6.6.2)
       psych (>= 4.0.0)
+    redis-client (0.19.1)
+      connection_pool
     reline (0.4.1)
       io-console (~> 0.5)
     rexml (3.2.6)
     ruby-graphviz (1.2.5)
       rexml
     ruby2_keywords (0.0.5)
+    sidekiq (7.2.0)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.14.0)
     sqlite3 (1.6.9)
       mini_portile2 (~> 2.8.0)
     sqlite3 (1.6.9-x86_64-linux)
@@ -214,6 +221,7 @@ DEPENDENCIES
   puma (>= 5.0)
   rails (~> 7.1.2)
   rails-erd
+  sidekiq (~> 7.2)
   sqlite3 (~> 1.4)
   tzinfo-data
 

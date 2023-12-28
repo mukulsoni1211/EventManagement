@@ -51,3 +51,5 @@ end
 
 # For authorization the users
 gem 'cancancan'
+
+gem "sidekiq", "~> 7.2"
