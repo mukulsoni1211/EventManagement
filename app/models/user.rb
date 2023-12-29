@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :bookings
   has_many :events
   has_many :user_events, through: :bookings
+  validates :email, presence: true, uniqueness: true
 
   def customer?
     self.roles.pluck(:name).include?('Customer')
