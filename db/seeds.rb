@@ -8,8 +8,8 @@ organizer = User.create(
 )
 
 customer = User.create(
-  email: 'customer1@test.com',
-  name: 'Event Organizer',
+  email: 'customer@test.com',
+  name: 'Customer',
   password: '1234'
 )
 
