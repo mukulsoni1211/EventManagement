@@ -2,7 +2,6 @@ class BookingConfirmationJob
   include Sidekiq::Job
 
   def perform(booking_id)
-    debugger
     booking = Booking.find_by(id: booking_id)
     user = booking.user
     puts "=============================================================="
