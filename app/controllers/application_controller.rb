@@ -20,7 +20,7 @@ class ApplicationController < ActionController::API
   end
 
   def current_user
-    @current_user ||= authorize_request
+    @current_user
   end
 
   def not_found

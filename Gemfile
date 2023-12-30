@@ -53,3 +53,4 @@ end
 gem 'cancancan'
 
 gem "sidekiq", "~> 7.2"
+gem 'active_model_serializers'
