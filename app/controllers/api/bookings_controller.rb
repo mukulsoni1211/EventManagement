@@ -23,7 +23,7 @@ class Api::BookingsController < ApplicationController
   end
 
   def update
-    if @event.update(booking_params)
+    if @booking.update(booking_params)
       render json: @booking, status: :ok
     else
       render json: {error: @booking.errors.full_messages.join(' , ')}, status: :unprocessable_entity
